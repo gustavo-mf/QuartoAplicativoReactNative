@@ -1,4 +1,14 @@
+import React, { Component } from 'react';
 import { AppRegistry } from 'react-native';
-import App from './App';
 
-AppRegistry.registerComponent('app4', () => App);
+import ListaItens from './src/components/listaItens';
+
+class app4 extends Component {
+	render() {
+		return (
+			<ListaItens />
+		);
+	}
+}
+
+AppRegistry.registerComponent('app4', () => app4);
